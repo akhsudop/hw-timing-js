@@ -14,6 +14,8 @@ const addLeadingZero = value => {
   return value.toString().padStart(2, '0');
 };
 
+startBtn.disabled = true;
+
 const startTimer = () => {
   startBtn.disabled = true;
   input.disabled = true;
@@ -42,8 +44,7 @@ const fp = flatpickr('#datetime-picker', {
   defaultDate: new Date(),
   minuteIncrement: 1,
   onClose(selectedDates) {
-    if (selectedDates[0] < Date.now()) {
-      startBtn.disabled = true;
+    if (selectedDates[0] <= Date.now()) {
       Notiflix.Notify.failure('Please choose a date in the future');
     } else {
       startBtn.disabled = false;
