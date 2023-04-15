@@ -1,3 +1,5 @@
+import '../css/01-color-switcher.css';
+
 const start = document.querySelector('[data-start]');
 const stop = document.querySelector('[data-stop]');
 let timerId = null;
