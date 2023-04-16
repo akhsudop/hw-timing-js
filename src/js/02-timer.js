@@ -20,7 +20,7 @@ const startTimer = () => {
   startBtn.disabled = true;
   input.disabled = true;
   let intervalId = setInterval(() => {
-    let ms = fp.selectedDates[0].getTime() - Date.now();
+    let ms = fp.selectedDates[0] - Date.now();
     const days = Math.floor(ms / (24 * 60 * 60 * 1000));
     const hours = Math.floor((ms / (1000 * 60 * 60)) % 24);
     const minutes = Math.floor((ms / (1000 * 60)) % 60);
