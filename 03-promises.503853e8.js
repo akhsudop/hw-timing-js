@@ -1,0 +1,2 @@
+form=document.querySelector(".form");submit.addEventListener("submit",(e=>{e.preventDefault(),((e,o)=>new Promise(((e,i)=>{setTimeout((()=>{Math.random()}),o)})))(position,firstDelay).then((({position:e,firstDelay:o})=>{console.log(`✅ Fulfilled promise ${promiseNumber} in ${delay}ms`)})).catch((({position:e,firstDelay:o})=>{console.log(`❌ Rejected promise ${promiseNumber} in ${delay}ms`)}))}));
+//# sourceMappingURL=03-promises.503853e8.js.map
